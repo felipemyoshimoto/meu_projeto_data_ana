@@ -1,0 +1,5 @@
+Github - Sempre que alterar/executar algo:
+
+git add .
+git commit -m "Descrição das alterações"
+git push
