@@ -4,7 +4,7 @@ Este repositório contém meus estudos de Python aplicados à lógica e analise 
 
 ## Estrutura
 - **main.py** -> programa principal
-- **exercicips/** -> exercícios diários
+- **exercicios/** -> exercícios diários
 - **modulos/** -> funções reutilizáveis
 - **modulos/** → funções reutilizáveis
 
