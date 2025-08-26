@@ -1,5 +1,5 @@
 Github - Sempre que alterar/executar algo:
 
 git add .
-git commit -m "Descrição das alterações"
+git commit -m "Melhorei o main.py com import dinânico e crie um criar_modulo.py para novos módulos"
 git push
