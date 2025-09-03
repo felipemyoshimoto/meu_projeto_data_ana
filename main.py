@@ -18,4 +18,22 @@ for nome in arquivos_modulos:
 
 #Exemplo de uso dos módulos
 print("Soma 5 + 7", modulos_importados["calculos"].soma(5, 7))
-print("Média dos números;", modulos_importados["estatisticas"].media([10, 20, 30]))
+
+#Nova Parte: Aula 4 - Análise de Dados com Pandas
+from modulos import analise
+
+#Carregando um arquivo CSV
+df = analise.carregar_csv("dados.csv")
+
+#Mostar primeiras linhas
+print(" Dados do arquivo CSV:")
+print(df)
+
+#Estatísticas
+print("\n Estatísticas básicas:")
+print(analise.estatistica_basica(df))
+
+#Selecionar uam coluna
+print("\n Idades:")
+print(analise.selecionar_coluna(df, "idade"))
+

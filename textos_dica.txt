@@ -3,3 +3,41 @@ Github - Sempre que alterar/executar algo:
 git add .
 git commit -m "Melhorei o main.py com import dinânico e crie um criar_modulo.py para novos módulos"
 git push
+
+#configurado para evitar esses erros de push rejeitado no futuro e trabalhar de forma mais segura com o GitHub
+
+
+Antes de fazer git push, sempre faça:
+
+git pull --rebase
+
+
+Explicando:
+
+git pull → busca alterações do remoto e faz merge.
+
+git pull --rebase → aplica suas alterações sobre as alterações que já existem no remoto, mantendo o histórico mais limpo.
+
+Dessa forma, o Git evita conflitos de push rejeitado.
+
+3️⃣ Usar commits pequenos e frequentes
+
+Faça commits curtos e frequentes:
+
+git add .
+git commit -m "Descrição clara do que mudou"
+
+
+Isso facilita a hora de rebasing e diminui conflitos.
+
+4️⃣ Sempre sincronizar com o remoto
+
+Antes de iniciar o trabalho do dia, faça:
+
+git fetch origin
+git rebase origin/main
+
+
+Isso garante que você está sempre atualizado com o que está no GitHub.
+
+Evita surpresas na hora do push.
